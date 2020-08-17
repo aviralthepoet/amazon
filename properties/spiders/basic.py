@@ -1,6 +1,10 @@
 import scrapy
 from properties.items import PropertiesItem
 from scrapy.loader.processors import MapCompose, Join
+import datetime
+import socket
+import urllib.parse
+from scrapy.loader import ItemLoader
 
 class BasicSpider(scrapy.Spider):
     name = "basic"
